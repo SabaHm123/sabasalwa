@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InscriptionController!{% endblock %}
+
+{% block body %}
+
+   
+<form action="{{path('inscription')}}" method="post" role="form" >inscription
+
+    <div class="container">
+
+<div col-sm-4>
+    <p>  <h1 class="page-title"> <i>Créer Votre Compte </i></h1></p>
+</div><br>
+<div class="row top-margin">
+        
+          
+          <div class="col-sm-6">
+            <label><i>Nom </i><span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="nomC">
+          </div>
+          <div class="col-sm-6">
+            <label><i>Prenom </i><span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="prenomC">
+          </div>
+            <div class="col-sm-6">
+              <label><i>E-mail </i><span class="text-danger">*</span></label>
+              <input type="email" class="form-control" name="emailC">
+            </div>
+            <div class="col-sm-6">
+              <label><i>Adresse </i><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="adresseC">
+            </div>
+            
+            <div class="col-sm-6">
+              <label><i>Code postale </i><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="codePostalC">
+            </div>
+            <div class="col-sm-6">
+              <label><i>Numero de telephone </i><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="numTelC">
+            </div>
+            <div class="col-sm-6">
+              <label><i>Mot de passe </i><span class="text-danger">*</span></label>
+              <input type="password" class="form-control" name="passwordC">
+            </div>
+          </div>
+
+          <hr>
+
+         
+    <center>
+      <br>
+      <div class="col-lg-6">
+										<button class="btn btn-action" type="submit">Inscription</button>
+                    	<button class="btn btn-action" type="reset" >Annuler</button>
+									</div>
+
+    </center>
+
+     
+
+        </div>
+ </form>
+
+{% endblock %}

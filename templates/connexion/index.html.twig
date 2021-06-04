@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ConnexionController!{% endblock %}
+
+{% block body %}
+                     <form name="fc" method="POST" action="Contact.php" onsubmit="return test()"><br>
+<h2>&nbsp;&nbsp; Se Connecter:</h2>
+
+<font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-mail :&nbsp&nbsp<input type="email" size="30" placeholder="foulenbenfoulen@accès.com"name="mail"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mot de passe :&nbsp&nbsp<input type="password" size="22" placeholder="ecrire votre mot de passe" name="mdp" ><br><br>
+</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='envoyer mdp.html'>mot de passe oubliee!!!</a>&nbsp&nbsp <a href="{{path('inscription')}}">Creer nouveau compte</a> <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn btn-danger" type="submit" value="Connexion" >
+
+</form>    
+
+{% endblock %}

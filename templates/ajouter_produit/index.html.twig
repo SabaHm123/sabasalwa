@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AjouterProduitController!{% endblock %}
+
+{% block body %}
+<form method="POST" action="ajout_produit.php"  enctype="multipart/form-data" class="container">
+
+    <div class="container">
+
+      <div col-sm-4>
+      </div><br>
+          <p>  <h1 class="page-title"> Ajouter un Produit</h1></p>
+<div class="row top-margin">
+
+          <div class="col-sm-6">
+            <label><b>Numero Produit </b><span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="numP">
+          </div>
+		   <div class="col-sm-6">
+            <label><b>Image Produit </b><span class="text-danger">*</span></label><br>
+            <input type="file" name="file">
+          </div>
+		    <div class="col-sm-6">
+            <label><b>Description Produit </b><span class="text-danger">*</span></label>
+            <textarea class="form-control" cols="40" rows="4" placeholder="description du produit" name="descriptionP">
+			</textarea>
+          </div>
+          <div class="col-sm-6">
+            <label><b>Nom Produit </b><span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="nomP">
+          </div>
+              
+            <div class="col-sm-6">
+              <label><b>Prix Produit  </b><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="prixP">
+            </div>
+            
+            
+
+          </div>
+
+          <hr>
+
+          <div class="row">
+
+
+
+          </div>
+    <center>
+      <br>
+      <div class="col-lg-6">
+	<button class="btn btn-action" type="submit" onclick="myFunctionC();">Ajouter</button>
+	<button class="btn btn-action" type="reset">Réinitialiser</button></div>
+	</div>
+    </center>
+      <br><br>
+      <script>
+      function myFunctionC() {
+          alert("Votre Produit a été Ajouter avec succès !!");
+      }
+      </script>
+        </div>
+      </form>
+    <!-- /.container -->
+
+{% endblock %}
